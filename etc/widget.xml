@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="cms_static_block">
+        <parameters>
+            <parameter name="template" xsi:type="select" visible="true" required="true" sort_order="10">
+                <label translate="true">Template</label>
+                <options>
+                    <option name="foobar" value="Yireo_ExampleWidgetAdditions::widget/static_block/block.phtml" selected="true">
+                        <label translate="true">CMS Static Block Foobar Template</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

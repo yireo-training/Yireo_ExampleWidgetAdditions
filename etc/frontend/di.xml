@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!--
+    <preference for="Magento\Cms\Block\Widget\Block" type="Yireo\ExampleWidgetAdditions\Rewrite\WidgetBlock"/>
+    -->
+
+    <type name="Magento\Cms\Block\Widget\Block">
+        <plugin name="Yireo_ExampleWidgetAdditions::addViewModelToWidgetBlock" type="Yireo\ExampleWidgetAdditions\Plugin\AddViewModelToWidgetBlock" />
+    </type>
+</config>

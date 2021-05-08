@@ -1,0 +1,15 @@
+<?php declare(strict_types=1);
+
+use Yireo\Example\ViewModel\CurrentProduct;
+use Magento\Cms\Block\Widget\Block;
+use Yireo\ExampleWidgetAdditions\Util\ViewModelRegistry;
+
+/* @var $block Block */
+/* @var $viewModelRegistry ViewModelRegistry */
+$viewModel = $viewModelRegistry->get(CurrentProduct::class);
+?>
+<div class="widget block block-static-block block-foobar">
+    <p>Block: <?= get_class($block) ?></p>
+    <p>View Model: <?= (isset($viewModel) && is_object($viewModel)) ? get_class($viewModel) : 'NULL'; ?></p>
+    <?= /* @noEscape */ $block->getText() ?>
+</div>
